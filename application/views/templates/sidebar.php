@@ -67,6 +67,14 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="<?= base_url('bkd') ?>" class="nav-link">
+              <i class="nav-icon fas fa-list"></i>
+              <p>
+                Daftar Pengajuan BKD
+              </p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

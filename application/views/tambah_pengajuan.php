@@ -1,4 +1,4 @@
-<div class="card card-primary">
+<div class="card card-info">
               <div class="card-header">
                 <h3 class="card-title">Surat Bebas Hukuman Disiplin</h3>
               </div>
@@ -18,18 +18,18 @@
                     <label for="exampleInputPassword1">NAMA</label>
                     <input type="text" name="nama" class="form-control" id="" placeholder="Masukkan Nama">
                   </div>
-                  <!-- <div class="form-group">
+                  <div class="form-group">
                     <label for="exampleInputPassword1">SKPD</label>
                     <input type="text" name="skpd" class="form-control" id="" placeholder="Masukkan Nama">
-                  </div> -->
-                  <div class="form-group">
+                  </div>
+                  <!-- <div class="form-group">
                         <label>SKPD</label>
                         <select class="form-control">
                           <option name="skpd">BADAN KEPEGAWAIAN DAERAH</option>
                           <option name="skpd">DINAS PERPUSTAKAAN DAN KEARSIPAN</option>
                           <option name="skpd">DINAS PEKERJAAN UMUM DAN PENATAAN RUANG</option>
                         </select>
-                      </div>
+                      </div> -->
                   <!-- <div class="form-group">
                     <label for="exampleInputFile">UPLOAD DOKUMEN</label>
                     <div class="input-group">

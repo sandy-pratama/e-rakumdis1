@@ -20,6 +20,16 @@ class Pengajuan extends CI_Controller {
         $this->load->view('pengajuan',$data);
         $this->load->view('templates/footer');
     } 
+    
+    public function data_bkd()
+    {
+        $data['title']= 'Bkd';
+        
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('bkd');
+        $this->load->view('templates/footer');
+    } 
 
     public function tambah()
     {
@@ -45,7 +55,7 @@ class Pengajuan extends CI_Controller {
             );
 
             $this->pengajuan_model->insert_data($data, 'tb_surat');
-            $this->session->set_flashdata('pesan', '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+            $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
             <strong>Hore!</strong> Pengajuan Kamu Sudah Terkirim.
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
