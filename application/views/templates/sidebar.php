@@ -63,7 +63,7 @@
             <a href="<?= base_url('pengajuan') ?>" class="nav-link">
               <i class="nav-icon fas fa-list"></i>
               <p>
-                Daftar Pengajuan
+                Daftar Pengajuan SKPD
               </p>
             </a>
           </li>

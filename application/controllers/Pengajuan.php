@@ -51,6 +51,7 @@ class Pengajuan extends CI_Controller {
             $this->tambah();
         } else {
             $data = array(
+                'tanggal' => $this->input->post('tanggal'),
                 'nip' => $this->input->post('nip'),
                 'nama' => $this->input->post('nama'),
                 'skpd' => $this->input->post('skpd'),
@@ -79,7 +80,12 @@ class Pengajuan extends CI_Controller {
                 'no_tiket' => $no_tiket,
                 'nip' => $this->input->post('nip'),
                 'nama' => $this->input->post('nama'),
+                'pangkat' => $this->input->post('pangkat'),
+                'jabatan' => $this->input->post('jabatan'),
+                'satker' => $this->input->post('satker'),
                 'skpd' => $this->input->post('skpd'),
+                'status' => $this->input->post('status'),
+
             );
 
             $this->pengajuan_model->update_data($data, 'tb_surat' );
