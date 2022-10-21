@@ -30,6 +30,16 @@
                           <option name="skpd">DINAS PEKERJAAN UMUM DAN PENATAAN RUANG</option>
                         </select>
                       </div> -->
+
+                  <!-- <div class="form-group">
+                    <label>SKPD</label>
+                      <select class="form-control" name="category">
+                        <option  value="">---Select Category---</option>                    
+                          <?php foreach ($unker as $unk) : ?> 
+                        <option value="<?php echo $unk->unker ?>"><?php echo $unk->unker ?></option>
+                           <?php endforeach ?>
+                       </select>    
+                  </div> -->
                   <!-- <div class="form-group">
                     <label for="exampleInputFile">UPLOAD DOKUMEN</label>
                     <div class="input-group">
@@ -42,9 +52,10 @@
                       </div>
                     </div>
                   </div> -->
-                  <div class="form-check">
+                  <!-- <div class="form-check">
                     <label class="form-check-label" for="exampleCheck1">*Surat Pengantar SKPD & Surat Bebas Hukuman Disiplin Dari SKPD</label>
-                  </div>
+                  </div> -->
+                  
                 </div>
                 <!-- /.card-body -->
 

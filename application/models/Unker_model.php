@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Pengajuan_model extends CI_Model {
+class Unker_model extends CI_Model {
 
     public function get_data($table)
     {
@@ -13,11 +13,11 @@ class Pengajuan_model extends CI_Model {
         $this->db->insert($table, $data);
     }
 
-    public function update_data($data, $table)
-    {
-        $this->db->where('no_tiket', $data['no_tiket']);
-        $this->db->update($table, $data);
-    }
+    // public function update_data($data, $table)
+    // {
+    //     $this->db->where('no_tiket', $data['no_tiket']);
+    //     $this->db->update($table, $data);
+    // }
 }
 
 /* End of file Pengajuan_model.php */

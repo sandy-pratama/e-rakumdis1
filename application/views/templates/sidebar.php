@@ -69,9 +69,17 @@
           </li>
           <li class="nav-item">
             <a href="<?= base_url('bkd') ?>" class="nav-link">
-              <i class="nav-icon fas fa-list"></i>
+              <i class="nav-icon fas fa-list-alt"></i>
               <p>
                 Daftar Pengajuan BKD
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url('unker') ?>" class="nav-link">
+              <i class="nav-icon fas fa-building"></i>
+              <p>
+                Referensi Unit Kerja
               </p>
             </a>
           </li>

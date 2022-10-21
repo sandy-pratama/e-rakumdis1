@@ -21,6 +21,8 @@ class Pengajuan extends CI_Controller {
         $this->load->view('templates/footer');
     } 
     
+    
+
     public function data_bkd()
     {
         $data['title']= 'Bkd';
@@ -63,6 +65,33 @@ class Pengajuan extends CI_Controller {
             </div>');
             redirect('dashboard');
         }
+    }
+
+    public function edit($no_tiket)
+    {
+        $this->_rules();
+
+        
+        if ($this->form_validation->run() == FALSE) {
+            $this->index();
+        } else {
+            $data = array(
+                'no_tiket' => $no_tiket,
+                'nip' => $this->input->post('nip'),
+                'nama' => $this->input->post('nama'),
+                'skpd' => $this->input->post('skpd'),
+            );
+
+            $this->pengajuan_model->update_data($data, 'tb_surat' );
+            $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Hore!</strong> Pengajuan Kamu Sudah Di Ubah.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            </div>');
+            redirect('dashboard');
+        }
+        
     }
 
     public function _rules()
