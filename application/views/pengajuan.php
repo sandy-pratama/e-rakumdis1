@@ -78,10 +78,10 @@
               <div class="card-body">
                 <div class="row">
                   <div class="col-5">
-                    <input type="text" name="nip" class="form-control" value="<?= $aju->nip ?>">
+                    <input type="text" name="nip" class="form-control" readonly value="<?= $aju->nip ?>">
                   </div>
                   <div class="col-7">
-                    <input type="text" name="nama" class="form-control" value="<?= $aju->nama ?>">
+                    <input type="text" name="nama" class="form-control" readonly value="<?= $aju->nama ?>">
                   </div>
                 </div>
                 <br>
@@ -105,7 +105,7 @@
                 <br>
                 <div class="row">
                   <div class="col-12">
-                    <input type="text" name="skpd" class="form-control" value="<?= $aju->skpd ?>">
+                    <input type="text" name="skpd" class="form-control" readonly value="<?= $aju->skpd ?>">
                   </div>
                 </div>
                 <br>

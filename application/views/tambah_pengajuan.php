@@ -10,13 +10,13 @@
                     <label for="exampleInputEmail1">No.Tiket</label>
                     <input type="email" name="no_tiket" class="form-control" id="exampleInputEmail1" placeholder="">
                   </div> -->
-                  <div class="form-group">
-                    <input type="date" name="tanggal" value="<?php echo date('Y-m-d'); ?>" class="form-control" id="">
-                  </div>
+                  <!-- <div class="form-group">
+                    <input type="hidden" name="tanggal" value="<?php echo date('Y-m-d'); ?>" class="form-control" id="" disabled>
+                  </div> -->
                   <div class="form-group">
                     <label for="exampleInputPassword1">NIP</label>
                     <input type="text" name="nip" class="form-control" id="" placeholder="Masukkan NIP">
-                  </div>
+                  </div> 
                   <div class="form-group">
                     <label for="exampleInputPassword1">NAMA</label>
                     <input type="text" name="nama" class="form-control" id="" placeholder="Masukkan Nama">
