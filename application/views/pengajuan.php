@@ -66,7 +66,8 @@
         </button>
       </div> -->
       <div class="modal-body">
-      <form action= "<?= base_url('pengajuan/edit/' . $aju->no_tiket) ?>" method="POST">
+      <!-- <form action= "<?= base_url('pengajuan/edit/' . $aju->no_tiket) ?>" method="POST"> -->
+      <?php echo form_open_multipart('pengajuan/edit/' . $aju->no_tiket) ?>
 
       <div class="card card-success">
               <div class="card-header">
@@ -120,7 +121,12 @@
                   </div>
                 </div>
                 <br>
-                <div class="form-group">
+                <div class="row">
+                  <div class="col-12">
+                    <input type="file" name="dokumen" class="form-control" value="">
+                  </div>
+                </div>
+                <!-- <div class="form-group">
                     <div class="input-group">
                       <div class="custom-file">
                         <input type="file" class="custom-file-input" id="exampleInputFile">
@@ -130,7 +136,7 @@
                         <span class="input-group-text" id="">Upload</span>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                     <label class="form-check-label" for="exampleCheck1">*Surat Pengantar & Surat Bebas Hukuman Disiplin Dari SKPD</label>
                 </div>
               </div>
@@ -140,7 +146,8 @@
                   <button type="submit" class="btn btn-primary">Submit</button>
                   <button type="reset" class="btn btn-danger">Reset</button>
                 </div>
-              </form>
+              <!-- </form> -->
+              <?php echo form_close(); ?>
       </div>
     </div>
   </div>

@@ -31,6 +31,7 @@ class Pengajuan extends CI_Controller {
         $this->load->view('templates/sidebar', $data);
         $this->load->view('bkd');
         $this->load->view('templates/footer');
+        
     } 
 
     public function tambah()
@@ -41,6 +42,7 @@ class Pengajuan extends CI_Controller {
         $this->load->view('templates/sidebar', $data);
         $this->load->view('tambah_pengajuan');
         $this->load->view('templates/footer');
+        
     } 
 
     public function tambah_aksi()
@@ -85,7 +87,19 @@ class Pengajuan extends CI_Controller {
                 'satker' => $this->input->post('satker'),
                 'skpd' => $this->input->post('skpd'),
                 'status' => $this->input->post('status'),
+                'dokumen' => $_FILES['dokumen'],
+                
+                if ('dokumen'=''){}else{
+                    $config['upload_path']      = './assets/dokumen',
+                    $config['allowed_types']    = 'jpg|png|pdf',
 
+                    $this->load->library('upload',$config),
+                    if(!$this->upload->do_upload('dokumen')){
+                        echo "UPLOAD GAGAL"; die();
+                    }else{
+                        'dokumen'->this->upload->data('file_name');
+                    }
+                }
             );
 
             $this->pengajuan_model->update_data($data, 'tb_surat' );
